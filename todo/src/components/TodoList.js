@@ -4,13 +4,7 @@ import { connect } from 'react-redux';
 import Todo from './Todo';
 
 const ToDoList = ({ todos }) => {
-  return (
-    <div>
-      {todos.map(todo => (
-        <Todo key={todo.id} todo={todo} />
-      ))}
-    </div>
-  );
+  return todos.map(todo => <Todo key={todo.id} todo={todo} />);
 };
 
 const mapStateToProps = ({ todos }) => ({ todos });
