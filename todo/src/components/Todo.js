@@ -1,9 +1,8 @@
-import React from 'react';
 import { connect } from 'react-redux';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 
-import { toggleTodo } from '../actions';
+import { toggleTodo, deleteTodo } from '../actions';
 
 const todoContainerCSS = css`
   width: 100%;
@@ -21,6 +20,7 @@ const todoCSS = css`
 `;
 
 const todoCompletedCSS = css`
+  width: 100%;
   padding: 5px;
   color: #3a3a3a;
   background-color: #5a5a5a;
@@ -36,7 +36,7 @@ const button = css`
   cursor: pointer;
 `;
 
-const Todo = ({ todo: { value, id, completed }, toggleTodo }) => {
+const Todo = ({ todo: { value, id, completed }, toggleTodo, deleteTodo }) => {
   return (
     <div css={todoContainerCSS}>
       <div
@@ -45,7 +45,9 @@ const Todo = ({ todo: { value, id, completed }, toggleTodo }) => {
       >
         {value}
       </div>
-      <button css={button}>−</button>
+      <button css={button} onClick={() => deleteTodo(id)}>
+        −
+      </button>
     </div>
   );
 };
@@ -56,5 +58,5 @@ const mapStateToProps = () => {
 
 export default connect(
   mapStateToProps,
-  { toggleTodo }
+  { toggleTodo, deleteTodo }
 )(Todo);
