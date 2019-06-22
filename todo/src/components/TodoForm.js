@@ -28,6 +28,7 @@ const buttonCSS = css`
   background-color: #2a2a2a;
   color: #dadada;
   border-radius: 0 3px 3px 0;
+  cursor: pointer;
 `;
 
 const TodoForm = ({ addTodo }) => {
