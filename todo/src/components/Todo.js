@@ -13,7 +13,7 @@ const todoContainerCSS = css`
 const todoCSS = css`
   padding: 5px;
   color: #dadada;
-  background-color: #1a1a1a;
+  background-color: #2a2a2a;
   border-radius: 3px;
   text-align: center;
 `;
