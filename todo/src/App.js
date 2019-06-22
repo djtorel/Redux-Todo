@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 
+import TodoCard from './components/TodoCard';
+
 function App() {
   return (
     <div className="App">
-      <div />
+      <TodoCard />
     </div>
   );
 }
