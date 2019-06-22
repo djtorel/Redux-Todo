@@ -8,6 +8,7 @@ const todoContainerCSS = css`
   width: 100%;
   margin-top: 5px;
   display: flex;
+  cursor: pointer;
 `;
 
 const todoCSS = css`

@@ -6,7 +6,8 @@ import TodoForm from './TodoForm';
 
 const todoCardContainer = css`
   margin-top: 10px;
-  width: 50%;
+  width: 92%;
+  max-width: 400px;
   background-color: #4a4a4a;
   display: flex;
   flex-direction: column;
