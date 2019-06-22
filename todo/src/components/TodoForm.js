@@ -11,7 +11,6 @@ const formContainer = css`
 
 const formCSS = css`
   width: 100%;
-  background-color: black;
   display: flex;
   alignt-items: stretch;
 `;
@@ -21,12 +20,14 @@ const inputCSS = css`
   background-color: #3a3a3a;
   border: 0;
   padding: 5px;
+  border-radius: 3px 0 0 3px;
 `;
 
 const buttonCSS = css`
   border: 0;
   background-color: #2a2a2a;
   color: #dadada;
+  border-radius: 0 3px 3px 0;
 `;
 
 const TodoForm = ({ addTodo }) => {
