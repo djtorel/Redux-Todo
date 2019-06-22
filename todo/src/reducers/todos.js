@@ -1,6 +1,6 @@
 import { ADD_TODO } from '../actions';
 
-const todos = (state = [], { type, text }) => {
+const todos = (state = [], { type, value }) => {
   switch (type) {
     case ADD_TODO:
       return [
@@ -10,7 +10,7 @@ const todos = (state = [], { type, text }) => {
             Math.floor(Math.random() * Date.now()).toString() +
             '-' +
             Date.now().toString(),
-          text,
+          value,
           completed: false
         }
       ];

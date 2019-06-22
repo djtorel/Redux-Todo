@@ -1,8 +1,8 @@
 import { ADD_TODO } from './action-items';
 
-const addTodo = text => ({
+const addTodo = value => ({
   type: ADD_TODO,
-  text
+  value
 });
 
 export default addTodo;

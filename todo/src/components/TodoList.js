@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import Todo from './Todo';
+
 const ToDoList = ({ todos }) => {
   return (
     <div>
       {todos.map(todo => (
-        <div key={todo.id}>{todo.text}</div>
+        <Todo key={todo.id} todo={todo} />
       ))}
     </div>
   );
