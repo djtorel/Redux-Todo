@@ -1,6 +1,6 @@
-import { ADD_TODO } from '../actions';
+import { ADD_TODO, TOGGLE_TODO } from '../actions';
 
-const todos = (state = [], { type, value }) => {
+const todos = (state = [], { type, value, id }) => {
   switch (type) {
     case ADD_TODO:
       return [
@@ -14,6 +14,10 @@ const todos = (state = [], { type, value }) => {
           completed: false
         }
       ];
+    case TOGGLE_TODO:
+      return state.map(todo =>
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
+      );
     default:
       return state;
   }
