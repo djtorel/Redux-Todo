@@ -32,7 +32,7 @@ const todoCompletedCSS = css`
 
 const button = css`
   border: 0;
-  background-color: #9a5a5a;
+  background-color: #ba5a5a;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
 `;
