@@ -10,6 +10,8 @@ const appContainer = css`
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 `;
 
 function App() {

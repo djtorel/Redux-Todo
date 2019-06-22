@@ -14,7 +14,7 @@ const todoContainerCSS = css`
 const todoCSS = css`
   width: 100%;
   padding: 5px;
-  color: #dadada;
+  color: #9a9a9a;
   background-color: #2a2a2a;
   border-radius: 3px 0 0 3px;
   text-align: center;
@@ -32,9 +32,10 @@ const todoCompletedCSS = css`
 
 const button = css`
   border: 0;
-  background-color: rgb(142, 89, 89);
+  background-color: #5a2626;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
+  color: #da5a5a;
 `;
 
 const Todo = ({ todo: { value, id, completed }, toggleTodo, deleteTodo }) => {

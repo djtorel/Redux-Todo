@@ -21,12 +21,13 @@ const inputCSS = css`
   border: 0;
   padding: 5px;
   border-radius: 3px 0 0 3px;
+  color: #dadada;
 `;
 
 const buttonCSS = css`
   border: 0;
   background-color: #2a2a2a;
-  color: #dadada;
+  color: #7a7a7a;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
 `;
