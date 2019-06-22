@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const TodoCard = props => {
+import { addTodo } from '../actions';
+
+const TodoCard = ({ addTodo }) => {
   return (
     <div>
-      <div />
+      <button onClick={() => addTodo('test')}>Test</button>
     </div>
   );
 };
@@ -15,5 +17,5 @@ const mapStateToProps = () => {
 
 export default connect(
   mapStateToProps,
-  {}
+  { addTodo }
 )(TodoCard);
