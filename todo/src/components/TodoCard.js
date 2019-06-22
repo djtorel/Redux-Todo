@@ -1,23 +1,15 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 import TodoList from './TodoList';
-import { addTodo } from '../actions';
+import TodoForm from './TodoForm';
 
 const TodoCard = ({ addTodo }) => {
   return (
     <div>
+      <TodoForm />
       <TodoList />
-      <button onClick={() => addTodo('test')}>Test</button>
     </div>
   );
 };
 
-const mapStateToProps = () => {
-  return {};
-};
-
-export default connect(
-  mapStateToProps,
-  { addTodo }
-)(TodoCard);
+export default TodoCard;
